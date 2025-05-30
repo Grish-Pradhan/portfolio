@@ -1,0 +1,704 @@
+/*CSS variables section*/
+:root {
+    background-color: rgba(0, 0, 21, 1);
+}
+
+/*General CSS and CSS reset*/
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 21, 1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Mobile toggle button - show on small screens */
+.w3-hide-medium.w3-hide-large {
+    display: none;
+}
+
+/*Extra Large screens - Extra large desktops*/
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.heeder-large-screen {
+    display: flex !important;
+    justify-content: space-evenly !important;
+    color: orange;
+    font-size: 18px !important;
+}
+
+#navDemo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    gap: 10px;
+    background-color: #000015;
+}
+
+#navDemo a {
+    color: orange;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+}
+
+.hero{
+    height: 650px;
+    background-image: url("hack.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #000015; 
+    margin-top: 60px; /* Add margin to account for fixed header */
+}
+
+.hero-description{
+    height: 650px;
+    background-color: rgba(0, 0, 21, .7);
+    display: flex;
+}
+
+.hero-text{
+    width: 70% !important;
+    margin: auto !important;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-text p{
+    color: white;
+    width: 50%;
+}
+
+.hero-title{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 80px;
+    color: orange;
+    text-align: center;
+}
+
+.social{
+    width: 100%;
+}
+
+.icons{
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+main{
+    width: 80% !important;
+    margin: auto !important;
+}
+
+.title{
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+    margin: 50px 0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.game-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+h3{
+    color: white;
+    text-align: center;
+}
+
+.games{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.game-list{
+    margin: 30px;
+    padding: 20px;
+    height: 200px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid gray;
+    background: rgba(255, 75, 255, 0.1);
+    box-shadow: 0 8px 40px 0 rgba(45, 57, 231, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.game-list:hover{
+    transform: scale(1.05);
+}
+
+.store{
+    margin-top: 50px;
+}
+
+.game-store{
+    margin-top: 20px !important;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.game-image{
+    width: 300px;
+    height: 180px;
+}
+
+.game-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.game-store-list{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    overflow: hidden;
+    border-top: none;
+    -webkit-box-shadow: 0 8px 40px 0 rgba(45, 57, 231, 0.37);
+    box-shadow: 0 8px 40px 0 rgba(45, 57, 231, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-bottom: 1px solid blueviolet;
+    color: white;
+}
+
+.store-text-description{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+} 
+
+h4{
+    color: white;
+    font-weight: 700;
+}
+
+.event-hero{
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(255, 75, 255, 0.1);
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    margin-top: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.event-text{
+    width: 50%;
+    color: orange;
+}
+
+.event-title{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.event-image{
+    width: 400px;
+    height: 500px;
+}
+
+.event-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.event-text p{
+    color: white;
+}
+
+.contact{
+    align-content: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contact-list{
+    margin-top: 15px !important;
+    color: white;
+}
+
+h5{
+    color: white;
+}
+
+span{
+    padding-right: 10px;
+}
+
+.email-contact{
+    width: 80%;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#badges img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/*Extra Large screens - Extra large desktops*/
+@media screen and (max-width: 1800px) {
+    .hero{
+        height: 650px !important;
+        background-image: url("hack.jpg");
+    }
+    .hero-description{
+        height: 650px
+    }
+    .hero-title{
+        font-size: 80px;
+    }
+}
+
+/*Large screens - Desktop*/
+@media screen and (max-width: 1500px) {
+    .hero{
+        height: 550px !important;
+        background-image: url("hack.jpg");
+    }
+    .hero-description{
+        height: 550px
+    }
+    .hero-title{
+        font-size: 50px;
+    }
+}
+
+/*medium screens - Laptops*/
+@media screen and (max-width: 1024px) {
+    main{
+        width: 100% !important;
+        margin: auto !important;
+    }    
+}
+
+/*Small screens - tablets and mobile*/
+@media screen and (max-width: 768px) {
+    /* Header fixes */
+    .heeder-large-screen {
+        display: none !important;
+    }
+    
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: #000015;
+    }
+    
+    /* Show mobile toggle button */
+    .w3-bar-item.w3-button.w3-hide-medium.w3-hide-large {
+        display: block !important;
+        color: orange;
+        font-size: 18px;
+    }
+    
+    /* Mobile navigation - initially hidden */
+    #navDemo {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        background: #000015;
+        padding: 15px 0;
+        width: 100%;
+        position: relative;
+        z-index: 999;
+        border-top: 1px solid orange;
+    }
+    
+    /* Show mobile nav when w3-show class is added */
+    #navDemo.w3-show {
+        display: flex !important;
+    }
+    
+    #navDemo a {
+        font-size: 16px;
+        color: orange;
+        padding: 12px 16px;
+        border-radius: 6px;
+        transition: all 0.2s ease;
+        text-decoration: none;
+        display: block;
+        width: 80%;
+        text-align: center;
+        border: 1px solid transparent;
+    }
+    
+    #navDemo a:hover {
+        background: orange;
+        color: #000015;
+        border: 1px solid orange;
+    }
+    
+    /* Hero section fixes */
+    .hero {
+        height: 400px !important;
+        background-image: url("hack.jpg");
+        margin-top: 120px; /* Increased margin to account for mobile header + potential nav menu */
+        position: relative;
+        z-index: 1;
+    }
+    
+    .hero-description {
+        height: 400px;
+        background-color: rgba(0, 0, 21, .7);
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .hero-title {
+        font-size: 32px;
+        text-align: center;
+        color: orange;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    
+    .hero-text {
+        width: 90% !important;
+        margin: auto !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .hero-text p {
+        width: 100%;
+        font-size: 14px;
+        color: white;
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+    
+    /* Fix social icons spacing */
+    .social {
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .social p {
+        margin: 0 0 10px 0;
+        font-size: 16px;
+        color: white;
+    }
+    
+    .w3-margin-top {
+        margin-top: 0 !important;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    /* Main content */
+    main {
+        width: 95% !important;
+        margin: 20px auto !important;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .title {
+        text-align: center;
+        font-size: 28px;
+        margin: 30px 0 20px 0;
+        color: orange;
+    }
+    
+    /* Games section */
+    .games {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin: 20px 0;
+    }
+    
+    .game-list {
+        width: 90%;
+        height: auto;
+        margin: 10px 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px 0 rgba(45, 57, 231, 0.2);
+        background: rgba(255, 75, 255, 0.1);
+    }
+    
+    .game-list:hover {
+        transform: scale(1.02);
+    }
+    
+    /* Skills section */
+    .game-store {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin: 20px 0;
+    }
+    
+    .game-store-list {
+        width: 90%;
+        height: auto;
+        margin: 10px 0;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px 0 rgba(45, 57, 231, 0.2);
+        background: rgba(255, 75, 255, 0.1);
+    }
+    
+    .game-image {
+        width: 100%;
+        height: 180px;
+    }
+    
+    .game-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .store-text-description {
+        padding: 15px;
+    }
+    
+    /* Achievements section */
+    .event-hero {
+        flex-direction: column;
+        width: 95%;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 10px;
+        gap: 15px;
+        background: rgba(255, 75, 255, 0.1);
+        box-shadow: 0 4px 20px 0 rgba(45, 57, 231, 0.2);
+    }
+    
+    .event-text {
+        width: 100%;
+        color: orange;
+        text-align: center;
+    }
+    
+    .event-title {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    
+    .event-text p {
+        font-size: 14px;
+        color: white;
+        line-height: 1.5;
+    }
+    
+    /* Badges section */
+    #badges .event-hero {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    #badges img {
+        width: 80px;
+        height: auto;
+        margin: 10px;
+    }
+    
+    /* Contact section */
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin: 20px 0;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .contact-list {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+        box-shadow: 0 2px 10px 0 rgba(45, 57, 231, 0.1);
+    }
+    
+    .contact-list p, .contact-list h5 {
+        font-size: 15px;
+        color: white;
+    }
+    
+    .email-contact {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+    
+    .email-contact input {
+        width: 100%;
+        margin: 10px 0;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    .email-contact button {
+        width: 100%;
+        background-color: #ff4b4b;
+        color: white;
+        border: none;
+        padding: 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    /* Social icons */
+    .icons {
+        font-size: 24px;
+        margin: 0 8px;
+        transition: all 0.3s ease;
+    }
+    
+    .icons:hover {
+        transform: scale(1.2);
+        color: orange;
+    }
+    
+    /* Ensure all images are responsive */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Certificate images specific sizing */
+    .event-hero img {
+        max-width: 250px;
+        width: 90%;
+        height: auto;
+        border-radius: 8px;
+        object-fit: contain;
+    }
+    
+    /* Badge images sizing */
+    #badges .event-hero {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 20px;
+    }
+    
+    #badges img {
+        width: 70px;
+        height: 70px;
+        margin: 8px;
+        object-fit: contain;
+    }
+    
+    #badges > div {
+        text-align: center;
+        margin: 10px;
+    }
+    
+    #badges p {
+        font-size: 12px;
+        margin-top: 5px;
+        color: white;
+    }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 480px) {
+    .hero {
+        margin-top: 60px;
+        height: 350px !important;
+    }
+    
+    .hero-description {
+        height: 350px;
+    }
+    
+    .hero-title {
+        font-size: 28px;
+    }
+    
+    .hero-text p {
+        font-size: 13px;
+    }
+    
+    .title {
+        font-size: 24px;
+    }
+    
+    .game-list {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    .game-store-list {
+        width: 95%;
+    }
+    
+    .event-hero {
+        width: 98%;
+        padding: 15px;
+    }
+    
+    .event-hero img {
+        max-width: 220px;
+    }
+}
